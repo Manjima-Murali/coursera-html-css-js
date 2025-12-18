@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Module 3 Solution</title>
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-
-<nav class="navbar navbar-default">
+<!-- Mobile Menu Navbar with Detailed Descriptions -->
+<nav class="navbar navbar-default visible-xs">
   <div class="container-fluid">
+    <!-- Brand -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed visible-xs"
-              data-toggle="collapse" data-target="#mobile-menu">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobileMenu">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -21,46 +11,59 @@
       <a class="navbar-brand" href="#">Food, LLC</a>
     </div>
 
-    <div class="collapse navbar-collapse" id="mobile-menu">
-      <ul class="nav navbar-nav visible-xs text-center">
-        <li><a href="#">Chicken</a></li>
-        <li><a href="#">Beef</a></li>
-        <li><a href="#">Sushi</a></li>
-      </ul>
+    <!-- Mobile Menu -->
+    <div class="collapse navbar-collapse" id="mobileMenu">
+      <div class="panel-group" id="menuAccordion">
+
+        <!-- Chicken -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#menuAccordion" href="#chicken">
+                Chicken
+              </a>
+            </h4>
+          </div>
+          <div id="chicken" class="panel-collapse collapse">
+            <div class="panel-body">
+              Tender grilled chicken marinated in a special blend of herbs and spices, cooked to perfection. Served with a side of fresh vegetables and your choice of dipping sauce. Perfect for a wholesome, flavorful meal.
+            </div>
+          </div>
+        </div>
+
+        <!-- Beef -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#menuAccordion" href="#beef">
+                Beef
+              </a>
+            </h4>
+          </div>
+          <div id="beef" class="panel-collapse collapse">
+            <div class="panel-body">
+              Juicy, tender beef steak cooked medium-rare, seasoned with garlic, rosemary, and a hint of black pepper. Comes with a side of roasted potatoes and steamed vegetables, delivering a rich and satisfying flavor with every bite.
+            </div>
+          </div>
+        </div>
+
+        <!-- Sushi -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#menuAccordion" href="#sushi">
+                Sushi
+              </a>
+            </h4>
+          </div>
+          <div id="sushi" class="panel-collapse collapse">
+            <div class="panel-body">
+              A selection of fresh sushi rolls made with premium salmon, tuna, and avocado. Each roll is carefully prepared to balance flavors and textures, served with soy sauce, pickled ginger, and wasabi for the perfect sushi experience.
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 </nav>
-
-<h1 class="text-center">Our Menu</h1>
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-xs-12 section-box">
-
-      <h3 class="text-center">Chicken</h3>
-      <p>
-        Our chicken dishes are prepared using fresh ingredients and traditional spices.
-        Each recipe is cooked carefully to deliver rich flavor and tenderness.
-      </p>
-
-      <h3 class="text-center">Beef</h3>
-      <p>
-        Our beef dishes are made from premium cuts and seasoned perfectly.
-        Slow cooking and grilling methods ensure juicy and flavorful meals.
-      </p>
-
-      <h3 class="text-center">Sushi</h3>
-      <p>
-        Our sushi is prepared with fresh seafood, seasoned rice, and authentic techniques.
-        Each roll is light, fresh, and delicious.
-      </p>
-
-    </div>
-  </div>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-</body>
-</html>
