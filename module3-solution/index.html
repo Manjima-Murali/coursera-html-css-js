@@ -1,69 +1,36 @@
-<!-- Mobile Menu Navbar with Detailed Descriptions -->
-<nav class="navbar navbar-default visible-xs">
-  <div class="container-fluid">
-    <!-- Brand -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobileMenu">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Food, LLC</a>
-    </div>
+<!-- Mobile/Desktop Menu Boxes -->
+<div class="container visible-xs"> <!-- Use 'container' for proper spacing -->
+  <div class="row">
 
-    <!-- Mobile Menu -->
-    <div class="collapse navbar-collapse" id="mobileMenu">
-      <div class="panel-group" id="menuAccordion">
-
-        <!-- Chicken -->
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#menuAccordion" href="#chicken">
-                Chicken
-              </a>
-            </h4>
-          </div>
-          <div id="chicken" class="panel-collapse collapse">
-            <div class="panel-body">
-              Tender grilled chicken marinated in a special blend of herbs and spices, cooked to perfection. Served with a side of fresh vegetables and your choice of dipping sauce. Perfect for a wholesome, flavorful meal.
-            </div>
-          </div>
+    <!-- Chicken Box -->
+    <div class="col-xs-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center"><strong>Chicken</strong></div>
+        <div class="panel-body">
+          Tender grilled chicken marinated in a special blend of herbs and spices, cooked to perfection. Served with a side of fresh vegetables and your choice of dipping sauce. Perfect for a wholesome, flavorful meal.
         </div>
-
-        <!-- Beef -->
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#menuAccordion" href="#beef">
-                Beef
-              </a>
-            </h4>
-          </div>
-          <div id="beef" class="panel-collapse collapse">
-            <div class="panel-body">
-              Juicy, tender beef steak cooked medium-rare, seasoned with garlic, rosemary, and a hint of black pepper. Comes with a side of roasted potatoes and steamed vegetables, delivering a rich and satisfying flavor with every bite.
-            </div>
-          </div>
-        </div>
-
-        <!-- Sushi -->
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#menuAccordion" href="#sushi">
-                Sushi
-              </a>
-            </h4>
-          </div>
-          <div id="sushi" class="panel-collapse collapse">
-            <div class="panel-body">
-              A selection of fresh sushi rolls made with premium salmon, tuna, and avocado. Each roll is carefully prepared to balance flavors and textures, served with soy sauce, pickled ginger, and wasabi for the perfect sushi experience.
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
+
+    <!-- Beef Box -->
+    <div class="col-xs-12">
+      <div class="panel panel-success">
+        <div class="panel-heading text-center"><strong>Beef</strong></div>
+        <div class="panel-body">
+          Juicy, tender beef steak cooked medium-rare, seasoned with garlic, rosemary, and a hint of black pepper. Comes with a side of roasted potatoes and steamed vegetables, delivering a rich and satisfying flavor with every bite.
+        </div>
+      </div>
+    </div>
+
+    <!-- Sushi Box -->
+    <div class="col-xs-12">
+      <div class="panel panel-info">
+        <div class="panel-heading text-center"><strong>Sushi</strong></div>
+        <div class="panel-body">
+          A selection of fresh sushi rolls made with premium salmon, tuna, and avocado. Each roll is carefully prepared to balance flavors and textures, served with soy sauce, pickled ginger, and wasabi for the perfect sushi experience.
+        </div>
+      </div>
+    </div>
+
   </div>
-</nav>
+</div>
